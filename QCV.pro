@@ -20,3 +20,7 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+INCLUDEPATH += "C:/libs/install/opencv/include"
+LIBS += -L C:/libs/install/opencv/x64/mingw/lib/libopencv_img_hash4130.dll.a
+LIBS += -L C:/libs/install/opencv/x64/mingw/lib/libopencv_world4130.dll.a

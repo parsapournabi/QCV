@@ -13,8 +13,6 @@ int main(int argc, char* argv[])
     QString curFile = "file:///" + QString(__FILE__);
     QString mainQmlPath = curFile.replace("main.cpp", "main.qml").replace("\\", "/");
 
-    qDebug() << "Qml: " << mainQmlPath;
-
     const QUrl url(mainQmlPath);
     QObject::connect(
         &engine,
